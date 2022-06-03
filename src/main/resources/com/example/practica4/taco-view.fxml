@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<?import javafx.scene.control.Button?>
+<AnchorPane prefHeight="0.0" prefWidth="0.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.practica4.TacoController">
+    <VBox alignment="CENTER" spacing="20">
+        <HBox alignment="TOP_RIGHT" prefHeight="33.0" prefWidth="255.0" spacing="30.0">
+            <Button fx:id="btn_atras" text="BACK"/>
+        </HBox>
+        <TableView fx:id="tabla" minHeight="250" minWidth="200" prefHeight="500.0" prefWidth="700.0" />
+    </VBox>
+
+
+</AnchorPane>

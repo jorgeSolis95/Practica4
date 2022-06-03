@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<Pane fx:id="pane" maxHeight="1920.0" maxWidth="1150.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="729.0" prefWidth="1150.0" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.practica4.agregarTacoController">
+   <children>
+      <Label layoutX="216.0" layoutY="60.0" text="Registre su taco">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Button fx:id="btn_guardar" layoutX="92.0" layoutY="350.0" mnemonicParsing="false" text="Guardar" />
+      <Button fx:id="btn_cancelar" layoutX="459.0" layoutY="350.0" mnemonicParsing="false" text="Cancel" />
+      <GridPane layoutX="33.0" layoutY="109.0" prefHeight="233.0" prefWidth="1103.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="948.0" minWidth="10.0" prefWidth="639.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="368.0" minWidth="0.0" prefWidth="75.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="369.0" minWidth="0.0" prefWidth="174.0" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="343.0" minWidth="0.0" prefWidth="205.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <ImageView fx:id="Imv_buscarImagen" fitHeight="52.0" fitWidth="109.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="2" />
+            <Label fx:id="lbl_taco" prefHeight="30.0" prefWidth="70.0" text="Taco" />
+            <Label fx:id="lbl_precio" text="Precio" GridPane.columnIndex="1" />
+            <SplitMenuButton fx:id="slpitBtnCantidad" mnemonicParsing="false" prefHeight="25.0" prefWidth="118.0" text="Cantidad" GridPane.columnIndex="3">
+              <items>
+                  <MenuItem mnemonicParsing="false" text="1" />
+                  <MenuItem mnemonicParsing="false" text="2" />
+                  <MenuItem mnemonicParsing="false" text="3" />
+                  <MenuItem mnemonicParsing="false" text="4" />
+                  <MenuItem mnemonicParsing="false" text="5" />
+                  <MenuItem mnemonicParsing="false" text="6" />
+                  <MenuItem mnemonicParsing="false" text="7" />
+                  <MenuItem mnemonicParsing="false" text="8" />
+                  <MenuItem mnemonicParsing="false" text="9" />
+                  <MenuItem mnemonicParsing="false" text="10"/>
+              </items>
+            </SplitMenuButton>
+         </children>
+      </GridPane>
+   </children>
+</Pane>
