@@ -76,10 +76,16 @@ public class BebidaView implements Initializable {
                     img_tabla= rowData.getImg_bebida();
                     System.out.println(rowData.getNom_bebida()+" id: "+id_tabla);
                     seleccionabebida();
+                    cerrar();
                 }
             });
             return row ;
         });
+    }
+
+    private void cerrar() {
+        Stage stage = (Stage) this.btn_atras.getScene().getWindow();
+        stage.close();
     }
 
     public void initTable(){

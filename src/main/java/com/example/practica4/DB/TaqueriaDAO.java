@@ -86,12 +86,15 @@ public class TaqueriaDAO {
         return lista;
     }
 
-    public void RegistrarTaco(Taco taco){
+    public void RegistrarTaco(Taco taco,Bebida bebida){
         try{
-            String query= "INSERT INTO orden (id_taco,id_bebida) VALUES(?,?)";
+            String query= "INSERT INTO orden (id_taco,id_bebida,total,cantidad_tacos,cantidad_bebida) VALUES(?,?,?,?,?)";
             PreparedStatement st = conn.prepareStatement(query);
-            st.setString(1,taco.getNom_taco());
-            st.setDouble(2,taco.getPrecio_taco());
+            st.setInt(1,taco.getId_taco());
+            st.setInt(2,bebida.getId_bebida());
+            st.setDouble(3,taco.getTotal_taco());
+            st.setInt(4,taco.getCantidad_taco());
+            st.setInt(5,bebida.getCantidad_bebida());
             System.out.println(st);
             st.execute();
             Alert alert=new Alert(Alert.AlertType.ERROR);

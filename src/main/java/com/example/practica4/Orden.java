@@ -1,9 +1,25 @@
 package com.example.practica4;
 
 public class Orden {
-    int id_orden,cantidad_taco,cantidad_bebida;
+    int id_orden,id_taco,id_bebida,cantidad_taco,cantidad_bebida;
     String nom_taco,nom_bebida;
     double precio_bebida,precio_taco,total;
+
+    public int getId_taco() {
+        return id_taco;
+    }
+
+    public void setId_taco(int id_taco) {
+        this.id_taco = id_taco;
+    }
+
+    public int getId_bebida() {
+        return id_bebida;
+    }
+
+    public void setId_bebida(int id_bebida) {
+        this.id_bebida = id_bebida;
+    }
 
     public double getPrecio_bebida() {
         return precio_bebida;

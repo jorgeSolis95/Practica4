@@ -1,7 +1,7 @@
 package com.example.practica4;
 
 public class Bebida {
-    int id_bebida;
+    int id_bebida,cantidad_bebida;
     String nom_bebida;
     double precio_bebida;
     String img_bebida;
@@ -9,6 +9,14 @@ public class Bebida {
     public int getId_bebida() {
         System.out.println("conchetumadre");
         return id_bebida;
+    }
+
+    public int getCantidad_bebida() {
+        return cantidad_bebida;
+    }
+
+    public void setCantidad_bebida(int cantidad_bebida) {
+        this.cantidad_bebida = cantidad_bebida;
     }
 
     public void setId_bebida(int id_bebida) {

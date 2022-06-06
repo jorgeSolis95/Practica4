@@ -35,8 +35,16 @@
                 <Label fx:id="lbl_precio" text="Precio" GridPane.columnIndex="1" />
                 <SplitMenuButton fx:id="slpitBtnCantidad" mnemonicParsing="false" prefHeight="25.0" prefWidth="118.0" text="Cantidad" GridPane.columnIndex="3">
                     <items>
-                        <MenuItem mnemonicParsing="false" text="1" />
-                        <MenuItem mnemonicParsing="false" text="2" />
+                        <MenuItem fx:id="Opcion1" text="1" />
+                        <MenuItem fx:id="Opcion2" text="2" />
+                        <MenuItem fx:id="Opcion3" text="3" />
+                        <MenuItem fx:id="Opcion4" text="4" />
+                        <MenuItem fx:id="Opcion5" text="5" />
+                        <MenuItem fx:id="Opcion6" text="6" />
+                        <MenuItem fx:id="Opcion7" text="7" />
+                        <MenuItem fx:id="Opcion8" text="8" />
+                        <MenuItem fx:id="Opcion9" text="9" />
+                        <MenuItem fx:id="Opcion10" text="10"/>
                     </items>
                 </SplitMenuButton>
             </children>
