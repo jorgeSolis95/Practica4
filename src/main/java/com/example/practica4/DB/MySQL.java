@@ -11,7 +11,7 @@ public class MySQL {
     private static String hostname   = "localhost";
     private static String dbname = "taqueriadb";
     private static String dbuser = "root";
-    private static String dbpass = "123456";
+    private static String dbpass = "";
 
 
     public static void conectar() {
